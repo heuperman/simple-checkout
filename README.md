@@ -10,9 +10,6 @@ Enter the following commands in your terminal:
 Clone the repository:
 `git clone https://github.com/heuperman/simple-checkout.git`
 
-Install the required gems:
-`bundle`
-
 ## Usage
 Enter the following commands in your terminal:
 
@@ -20,7 +17,7 @@ Change into the main directory:
 `cd simple-checkout`
 
 Run the app:
-*not currently available*
+*not currently available, run it in the theatre of the mind instead*
 
 ## Running tests
 This app comes with a full feature test and unit tests with 100% coverage.  
@@ -32,4 +29,4 @@ Jasmine -- as the Javascript testing framework
 
 ## Authors
 The good people at [Makers Academy](https://makers.tech/) -- instructions  
-[Cornelis Heuperman](https://github.com/heuperman) -- tests, code and flavour text
+[Cornelis Heuperman](https://github.com/heuperman) -- tests and code
