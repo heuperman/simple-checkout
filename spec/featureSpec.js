@@ -23,8 +23,12 @@ describe("Feature test", function() {
   // As a shopper
   // So that I know how much to pay
   // I would like to be able to see a total for all scanned items
+
+  // As a shopper
+  // So that I know how much to pay
+  // I would like to see all prices correctly formatted (£xx.xx)
   it("lets the user see total price of scanned items", function() {
     for (i = 0; i < 3; i++) { checkout.scan(sample); }
-    expect(checkout.total()).toEqual(5.97);
+    expect(checkout.total()).toEqual("£5.97");
   });
 });

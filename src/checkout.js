@@ -10,9 +10,18 @@ Checkout.prototype.scan = function(item) {
 };
 
 Checkout.prototype.total = function() {
-  var totalPrice = 0;
+  var totalPrice = this._addPrices();
+  return this._formatPrice(totalPrice);
+};
+
+Checkout.prototype._formatPrice = function(price) {
+  return "£" + price;
+};
+
+Checkout.prototype._addPrices = function() {
+  var total = 0;
   for ( var index in this._basket) {
-    totalPrice += this._basket[index].price;
+    total += this._basket[index].price;
   }
-  return totalPrice;
+  return total;
 };
