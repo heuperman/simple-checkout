@@ -19,4 +19,12 @@ describe("Feature test", function() {
   it("allows user to scan items", function() {
     expect(checkout.scan(sample)).toEqual(1.99);
   });
+
+  // As a shopper
+  // So that I know how much to pay
+  // I would like to be able to see a total for all scanned items
+  it("lets the user see total price of scanned items", function() {
+    for (i = 0; i < 3; i++) { checkout.scan(sample); }
+    expect(checkout.total()).toEqual(5.97);
+  });
 });
